@@ -1,0 +1,193 @@
+<!--- assignment---->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script >
+ 
+ /*1.Write a program to replace the “Hyder” to “Islam” in the word
+“Hyderabad” and display the result in your browser.
+
+ let city="Hyderabad";
+             city= city.substring(5,9);
+             city="Islam" + city;
+             document.write(city);
+
+
+
+*/
+
+/* 2: Write a program that converts a string “472” to a number 472. Display
+the values & types in your browser
+
+var result = /[a-zA-Z0-9_-]/.test(str);
+
+		let val1 = "472";
+		document.write(" value " + val1 +" type of value= "+typeof val1);
+		let val2 = 472;
+		document.write("\n\n value " + val2 +" type of value= "+typeof val2);
+		*/
+
+
+/*3. Write a program to take password as an input from user. The
+password must qualify these requirements:
+
+
+		let pw = prompt("Enter password");
+        if (pw === "") {
+            document.write("**Fill the password please!");
+            // return false;
+        }
+        else if (pw.length < 8) {
+            document.write("Password length must be atleast 8 characters");
+            // return false;
+        }
+        else if (isNaN(parseInt(pw[0]))) {  //isNaN => agr koi b value nh hogi empty string hoga tw w o true return kry ga
+            alert("password is valid");
+        } 
+        else {
+            alert("Password should not start with number");
+        }
+
+*/
+
+/*4. Write a program to validate email address with following evaluation
+a. This string must contain @
+b. Ths string must contact chars
+c. The @ must have at least 1 char in front
+d. The string must contain .(dot) after @ and at least 1 char. */
+
+
+
+
+
+
+
+
+
+
+
+/* 5. Write a program that takes a positive integer from user & display the
+following in your browser.
+
+let input = prompt("Enter a +ve integer");
+            document.write("number=" +input);
+            document.write("\n Round off value=" + Math.round(input));
+             document.write("\n Floor value=" + Math.floor(input));
+           document.write("\n Ceil  value=" + Math.ceil(input));
+
+*/
+
+/*6.Write a program that simulates a dice using random() method of JS
+Math class. Display the value of dice in your browser.
+ 
+
+ var diceRoll = Math.floor( Math.random() * 6 ) +1;
+alert('You rolled a ' + diceRoll);
+
+*/
+
+/* 7.You have a string “The quick brown fox jumps over the lazy dog”.
+Write a program to count the number of occurrences of the word “the”
+in given string*/ 
+
+ // let str = "The quick brown fox jumps over the lazy dog" ;
+ // str = str.toLowerCase()
+ //    let word =(str.match(/the/g)).length;  
+ //    document.write(" The quick brown fox jumps over the lazy dog " + "\n\n There are " + word + " occurance(S) of the word ");
+
+
+/* 11 ka half part 
+ let num = "12345";
+ num = num.split("");
+ // console.log(num);
+ // let total;
+
+ for (var i = 0; i < num.length; i++) {
+ 	// console.log(num[i] , typeof );
+ 	num= total + num[i];
+ }
+
+ console.log(total);
+
+*/
+
+/* 9. Remove all available HTML tags from given string 
+
+document.write("Only Print This");
+
+*/
+
+/* 10.Write a program that round a number to a given decimal places.
+
+
+let num1 = 16.765;
+let num2 = 12.37982;
+let num3 = -9.3079499;
+
+
+console.log(num1.toFixed(2));
+console.log(num2.toFixed(2));
+console.log(num3.toFixed(4));
+
+*/
+
+/*11.Write a program to take input of a Number and find a Mean of All
+Digits.
+
+
+let input = prompt("Enter a Number");
+
+*/
+
+/* 12. Write a program that shows the message “First fifteen days of the
+month” if the date is less than the 16th of the month else shows “Last
+days of the month”.
+
+let date = prompt("Enter date");
+if(date<16)
+alert("First fifteen days of the month");
+else{
+	alert("Last days of the month");
+
+}
+*/
+
+/* 13. Write a program that determines the minutes since midnight, Jan
+1, 1970 and assigns it to a variable that hasn't been declared
+beforehand. Use any variable you like to represent the Date object.*/
+  
+
+
+  /*15.Write a program to ask the user about his age. Calculate and show
+his birth year in your browser
+
+let age = prompt("Enter your birthdate");
+ alert("Hello, " + "you are " + age + " years old!");
+ */
+
+ // Note: Program: 11
+
+// let userInput = prompt("Enter eny number!");
+// // console.log(userInput);
+// let total = 0;
+
+// for (let i = 0; i < userInput.length; i++) {
+//     // console.log(userInput[i]);
+//     total = total + Number(userInput[i]);
+// }
+
+// console.log(total);
+var currentDate = new Date()
+var currentYear = currentDate.getFullYear()
+ console.log(currentYear)
+
+
+	</script>
+
+
+</body>
+</html>
