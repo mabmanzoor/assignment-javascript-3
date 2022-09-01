@@ -1,4 +1,4 @@
-<!--- assignment---->
+<!-- <!--- assignment---->
 
 <!DOCTYPE html>
 <html>
@@ -8,49 +8,84 @@
 <body>
 	<script >
  
- /*1.Write a program to replace the “Hyder” to “Islam” in the word
-“Hyderabad” and display the result in your browser.
+//  1.Write a program to replace the “Hyder” to “Islam” in the word
+// “Hyderabad” and display the result in your browser.
 
- let city="Hyderabad";
-             city= city.substring(5,9);
-             city="Islam" + city;
-             document.write(city);
+             // let city="Hyderabad";
+             // let replacement = city.replace("Hyder" , "Islam");
+             // console.log(replacement);
+             
 
+
+
+
+
+
+//  2: Write a program that converts a string “472” to a number 472. Display
+// the values & types in your browser
+
+
+
+		// let val1 = "472";
+		// console.log(" value " + val1 +" type of value= "+typeof val1);
+		// console.log(" value " + Number(val1) +" type of value= "+typeof Number(val1));
+		// let val2 = 472;
+		// document.write("\n\n value " + Number(val1) +" type of value= "+typeof val2);
+		
+
+
+
+
+// 3. Write a program to take password as an input from user. The
+// password must qualify these requirements:
+
+/*
+		let pw = prompt("Enter password");
+        if (pw === "") {
+             console.log("**Fill the password please!");
+            // return false;
+ }
+         else if (pw.length < 8) {
+             console.log("Password length must be atleast 8 characters");
+  // return false;
+         }
+ else if (isNaN(parseInt(pw[0]))) {  //isNaN => agr koi b value nh hogi empty string hoga tw w o true return kry ga
+  alert("password should contain alphabets and numbers");
+         } 
+
+  else {
+             console.log("Password should not start with number");
+        }
 
 
 */
+/* 3 
+var userInput = prompt("Enter password!");
+ var regExpForChar = /[a-zA-Z]/;
+var regExpForNums = /[0-9]/;
 
-/* 2: Write a program that converts a string “472” to a number 472. Display
-the values & types in your browser
+ if (userInput == "") {
+    alert("Invalid input!");
+ }
 
-var result = /[a-zA-Z0-9_-]/.test(str);
+ else if (!userInput.match(regExpForChar)) {
+     alert("Password should contain alphabets");
+ }
 
-		let val1 = "472";
-		document.write(" value " + val1 +" type of value= "+typeof val1);
-		let val2 = 472;
-		document.write("\n\n value " + val2 +" type of value= "+typeof val2);
-		*/
+ else if (!userInput.match(regExpForNums)) {
+     alert("Password should contain numbers");
+ }
 
+else if (!isNaN(userInput.charAt(0))) {
+     alert("Password should not start with a number");
+ }
 
-/*3. Write a program to take password as an input from user. The
-password must qualify these requirements:
+ else if (userInput.length < 8) {
+     alert("Password must at least 8 characters long");/ }
 
-
-		let pw = prompt("Enter password");
-        if (pw === "") {
-            document.write("**Fill the password please!");
-            // return false;
-        }
-        else if (pw.length < 8) {
-            document.write("Password length must be atleast 8 characters");
-            // return false;
-        }
-        else if (isNaN(parseInt(pw[0]))) {  //isNaN => agr koi b value nh hogi empty string hoga tw w o true return kry ga
-            alert("password is valid");
-        } 
-        else {
-            alert("Password should not start with number");
-        }
+ else {
+     console.log("Success!");
+ };
 
 */
 
@@ -61,38 +96,58 @@ c. The @ must have at least 1 char in front
 d. The string must contain .(dot) after @ and at least 1 char. */
 
 
+//         let email_id = prompt("Enter your email address");
+//         const regex_pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+//         if (regex_pattern.test(email_id)) {
+//             console.log('The email address is valid');
+//         }
+//         else {
+//             console.log('The email address is not valid');
+//         }
+
+
+
+//  5. Write a program that takes a positive integer from user & display the
+// following in your browser.
+
+// let input = prompt("Enter a +ve integer");
+//if(input < 0)
+//console.log("Please enter a positive integer");
+  //      else {
+//             document.write("number=" +input);
+//             document.write("\n Round off value=" + Math.round(input));
+//              document.write("\n Floor value=" + Math.floor(input));
+//            document.write("\n Ceil  value=" + Math.ceil(input));
+//}
 
 
 
 
-
-
-
-
-
-/* 5. Write a program that takes a positive integer from user & display the
-following in your browser.
-
-let input = prompt("Enter a +ve integer");
-            document.write("number=" +input);
-            document.write("\n Round off value=" + Math.round(input));
-             document.write("\n Floor value=" + Math.floor(input));
-           document.write("\n Ceil  value=" + Math.ceil(input));
-
-*/
-
-/*6.Write a program that simulates a dice using random() method of JS
-Math class. Display the value of dice in your browser.
+// 6.Write a program that simulates a dice using random() method of JS
+// Math class. Display the value of dice in your browser.
  
 
- var diceRoll = Math.floor( Math.random() * 6 ) +1;
-alert('You rolled a ' + diceRoll);
+ // var diceRoll = Math.floor( Math.random() * 6 ) +1;
+ // var diceRoll = Math.floor(Math.random() * 6) + 1;
+ // console.log(diceRoll)
+// alert('You rolled a ' + diceRoll);
+
+       /* var diceRoll1= 6;
+        var diceRoll = Math.floor(Math.random() * 6) + 1;
+        console.log("Dice value1= "+diceRoll1);
+        console.log("Dice value2= "+diceRoll);
+
+        if(diceRoll1 === diceRoll)
+        console.log("Dice values match");
+        else
+        console.log("Dice values does not match");
 
 */
 
-/* 7.You have a string “The quick brown fox jumps over the lazy dog”.
-Write a program to count the number of occurrences of the word “the”
-in given string*/ 
+//  7.You have a string “The quick brown fox jumps over the lazy dog”.
+// Write a program to count the number of occurrences of the word “the”
+// in given string
 
  // let str = "The quick brown fox jumps over the lazy dog" ;
  // str = str.toLowerCase()
@@ -100,26 +155,16 @@ in given string*/
  //    document.write(" The quick brown fox jumps over the lazy dog " + "\n\n There are " + word + " occurance(S) of the word ");
 
 
-/* 11 ka half part 
- let num = "12345";
- num = num.split("");
- // console.log(num);
- // let total;
+//8 nh krna
 
- for (var i = 0; i < num.length; i++) {
- 	// console.log(num[i] , typeof );
- 	num= total + num[i];
- }
 
- console.log(total);
+/* 9. Remove all available HTML tags from given string.
 
-*/
+var htmlInput = "<h1>ahmed</h1>";
+console.log(htmlInput.slice(4, 9));
 
-/* 9. Remove all available HTML tags from given string 
+ */
 
-document.write("Only Print This");
-
-*/
 
 /* 10.Write a program that round a number to a given decimal places.
 
@@ -135,18 +180,35 @@ console.log(num3.toFixed(4));
 
 */
 
-/*11.Write a program to take input of a Number and find a Mean of All
-Digits.
 
 
-let input = prompt("Enter a Number");
+ /* 11. Write a program to take input of a Number and find a Mean of All Digits
+        let userInput = prompt("Enter any number to find its mean");
+        console.log("Number= " + userInput);
 
+        let sum = 0;
+        for (let i = 0; i < userInput.length; i++) {
+            // console.log(userInput[i]);
+            sum = sum + Number(userInput[i]);
+        }
+        // console.log("Sum= "+sum);
+
+        let numCount = userInput.length;
+        // console.log("numcount " +numCount);
+
+        let avg = sum / numCount;
+        console.log('Mean of all digit is: ' + avg);
 */
 
-/* 12. Write a program that shows the message “First fifteen days of the
-month” if the date is less than the 16th of the month else shows “Last
-days of the month”.
 
+
+
+
+
+//  12. Write a program that shows the message “First fifteen days of the
+// month” if the date is less than the 16th of the month else shows “Last
+// days of the month”.
+/*
 let date = prompt("Enter date");
 if(date<16)
 alert("First fifteen days of the month");
@@ -156,38 +218,78 @@ else{
 }
 */
 
+
+
+
 /* 13. Write a program that determines the minutes since midnight, Jan
 1, 1970 and assigns it to a variable that hasn't been declared
 beforehand. Use any variable you like to represent the Date object.*/
   
+ /*13 */
 
+        // var d = new Date();
+        // var millsSince = d.getTime();
+        // console.log("Current Date= " + d);
+        // console.log("Ellapsed milliseconds since January 1,1970= " + millsSince);
+        
+        // var mins = d.getMinutes();
+        // console.log("Minutes " + mins);
+
+
+
+
+
+ /* 14.
+        var d = new Date();
+        console.log("Current Date= " + d);
+
+        d.setHours(d.getHours()- 1);
+        console.log("1 hour ago it was "+d);
+*/
 
   /*15.Write a program to ask the user about his age. Calculate and show
 his birth year in your browser
 
-let age = prompt("Enter your birthdate");
- alert("Hello, " + "you are " + age + " years old!");
- */
+//  let age = prompt("enter your age");
+// console.log("your age is" +age);
 
- // Note: Program: 11
+// var currentDate = new Date()
+// var currentYear = currentDate.getFullYear();
+// var birthYear = currentYear-age;
+//  console.log("your birthyear is" +birthYear)
 
-// let userInput = prompt("Enter eny number!");
-// // console.log(userInput);
-// let total = 0;
 
-// for (let i = 0; i < userInput.length; i++) {
-//     // console.log(userInput[i]);
-//     total = total + Number(userInput[i]);
-// }
+//  
+        
+        // /[a-zA-Z]/
 
-// console.log(total);
-var currentDate = new Date()
-var currentYear = currentDate.getFullYear()
- console.log(currentYear)
+       
+
+
+
+
+
+
+
+       
+/*
+let userInput = prompt("Enter eny number!");
+// console.log(userInput);
+let total = 0;
+
+for (let i = 0; i < userInput.length; i++) {
+    // console.log(userInput[i]);
+    total = total + Number(userInput[i]);
+}
+
+console.log(total);
+*/
+
+
 
 
 	</script>
-
+ 
 
 </body>
-</html>
+</html> 

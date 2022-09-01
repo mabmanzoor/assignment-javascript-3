@@ -1,0 +1,40 @@
+<!-- HTML code to implement the given year is 
+    leap year or not   task 9 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+</head>
+  
+<body>
+
+    <!-- year ka input liya h or us k btn p on click lagaya h confirm krne k liye --->
+    Input Year: <input type="text" id = "year"/>
+      
+    <input type="button" id="button" onClick="isLeapYear()"
+            value="Check Leap Year">
+      
+    <p id="GFG"></p>
+      
+    <!-- JavaScript code to check given year is
+        leap year or not -->
+
+         <!--script m ek method bnaya h or sal ka input liya h db se uski id match krwane k liye--->
+         <!--- element id age k equal hogi inner.html k andhr jahan year equal hoga 100 k tw y print kryga saal ka 400 wrna saal ka 4--->
+         <!---GFG = greeksfogreeks---->
+
+    <script>
+      function isLeapYear() {
+            var year= document.getElementById("year").value;
+              
+            document.getElementById("GFG").innerHTML 
+                = (year % 100 === 0) ? (year % 400 === 0)
+                                     : (year % 4 === 0);
+        }
+
+        //data type check krwane k liye 3= use krty h hm
+    </script>
+</body>
+  
+</html>                    
+

@@ -1,0 +1,9 @@
+git init  (empty repo initialize on local)
+git status (check current repo state)
+git remote add origin https://github.com/mabmanzoor/assignment-javascript-3.git
+
+
+git status 
+git add . (add all file to repo staging)
+git commit -m "My fist Comit in git" (code description)
+git push -u origin main
